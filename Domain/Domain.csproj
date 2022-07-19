@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="DTOs\" />
+    <None Remove="Entities\" />
+    <None Remove="Interfaces\" />
+    <None Remove="DTOs\Address\" />
+    <None Remove="DTOs\Contact\" />
+    <None Remove="DTOs\Employee\" />
+    <None Remove="DTOs\Telephone\" />
+    <None Remove="Entities\Human\" />
+    <None Remove="Entities\Communication\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DTOs\" />
+    <Folder Include="Entities\" />
+    <Folder Include="Interfaces\" />
+    <Folder Include="DTOs\Address\" />
+    <Folder Include="DTOs\Contact\" />
+    <Folder Include="DTOs\Employee\" />
+    <Folder Include="DTOs\Telephone\" />
+    <Folder Include="Entities\Human\" />
+    <Folder Include="Entities\Communication\" />
+  </ItemGroup>
+</Project>
