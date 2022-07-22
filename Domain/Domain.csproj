@@ -1,29 +1,21 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.1</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="DTOs\" />
-    <None Remove="Entities\" />
-    <None Remove="Interfaces\" />
-    <None Remove="DTOs\Address\" />
-    <None Remove="DTOs\Contact\" />
-    <None Remove="DTOs\Employee\" />
-    <None Remove="DTOs\Telephone\" />
-    <None Remove="Entities\Human\" />
-    <None Remove="Entities\Communication\" />
+    <None Remove="Microsoft.EntityFrameworkCore" />
+    <None Remove="Serilog.AspNetCore" />
+    <None Remove="Serilog.Expressions" />
+    <None Remove="Serilog.Sinks.Seq" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="DTOs\" />
-    <Folder Include="Entities\" />
-    <Folder Include="Interfaces\" />
-    <Folder Include="DTOs\Address\" />
-    <Folder Include="DTOs\Contact\" />
-    <Folder Include="DTOs\Employee\" />
-    <Folder Include="DTOs\Telephone\" />
-    <Folder Include="Entities\Human\" />
-    <Folder Include="Entities\Communication\" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.7" />
+    <PackageReference Include="Serilog.AspNetCore" Version="6.0.1" />
+    <PackageReference Include="Serilog.Expressions" Version="3.4.0" />
+    <PackageReference Include="Serilog.Sinks.Seq" Version="5.1.1" />
   </ItemGroup>
 </Project>

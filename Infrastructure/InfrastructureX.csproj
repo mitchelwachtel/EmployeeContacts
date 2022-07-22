@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Persistence\" />
+    <None Remove="Persistence\Data\" />
+    <None Remove="Persistence\Repositories\" />
+    <None Remove="Persistence\Migrations\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Persistence\" />
+    <Folder Include="Persistence\Data\" />
+    <Folder Include="Persistence\Repositories\" />
+    <Folder Include="Persistence\Migrations\" />
+  </ItemGroup>
+</Project>

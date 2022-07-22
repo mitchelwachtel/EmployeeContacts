@@ -1,11 +1,16 @@
 ﻿using System;
-namespace Domain.Entities.Communication
+namespace EmployeeContacts.Domain.Entities.Communication
 {
-    public class Address
+    public class Address : BaseCommunication
     {
-        public Address()
-        {
-        }
+        public string Street { get; set; }
+
+        public string City { get; set; }
+
+        public string State { get; set; }
+
+        public int PostalCode { get; set; }
     }
 }
+
 

@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Entities\" />
+    <None Remove="Entities\Human\" />
+    <None Remove="Entities\Communication\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DomainX\" />
+    <Folder Include="DomainX\Human\" />
+    <Folder Include="DomainX\Communication\" />
+  </ItemGroup>
+</Project>

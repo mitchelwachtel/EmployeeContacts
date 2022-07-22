@@ -2,10 +2,10 @@
 using AutoMapper;
 using EmployeeContacts.Domain.Entities.Human;
 using EmployeeContacts.Domain.Entities.Communication;
-using EmployeeContacts.Domain.DTOs.Address;
-using EmployeeContacts.Domain.DTOs.Contact;
-using EmployeeContacts.Domain.DTOs.Employee;
-using EmployeeContacts.Domain.DTOs.Telephone;
+using EmployeeContacts.Application.DTOs.Address;
+using EmployeeContacts.Application.DTOs.Contact;
+using EmployeeContacts.Application.DTOs.Employee;
+using EmployeeContacts.Application.DTOs.Telephone;
 
 namespace EmployeeContacts.Application.Mappers
 {
