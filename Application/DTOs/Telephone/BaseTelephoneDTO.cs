@@ -11,7 +11,7 @@ namespace EmployeeContacts.Application.DTOs.Telephone
 
         public int PhoneNumber { get; set; }
 
-        public string Type { get; set; }
+        public string? Type { get; set; }
     }
 }
 

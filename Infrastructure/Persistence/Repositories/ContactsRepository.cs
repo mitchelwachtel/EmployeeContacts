@@ -28,6 +28,8 @@ namespace EmployeeContacts.Infrastructure.Persistence.Repositories
 
         public async Task<List<Contact>> GetAllContactsByEmployeeIdAsync(int id)
         {
+
+
             var result = await _context.Contacts.Include(q => q.Addresses).Include(q => q.Telephones).Where(q => q.EmployeeId == id).ToListAsync();
             return result;
         }

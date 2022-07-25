@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using EmployeeContacts.Domain.Entities.Human;
 
@@ -8,7 +9,8 @@ namespace EmployeeContacts.Domain.Entities.Communication
     {
         public int Id { get; set; }
 
-        public string Type { get; set; }
+        [Required]
+        public string? Type { get; set; }
 
         [ForeignKey(nameof(EmployeeId))]
         public int? EmployeeId { get; set; }

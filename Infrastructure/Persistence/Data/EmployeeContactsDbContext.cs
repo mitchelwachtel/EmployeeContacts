@@ -13,10 +13,10 @@ namespace EmployeeContacts.Infrastructure.Persistence.Data
         {
         }
 
-        public DbSet<Employee> Employees { get; set; }
-        public DbSet<Contact> Contacts { get; set; }
-        public DbSet<Address> Addresses { get; set; }
-        public DbSet<Telephone> Telephones { get; set; }
+        public DbSet<Employee>? Employees { get; set; }
+        public DbSet<Contact>? Contacts { get; set; }
+        public DbSet<Address>? Addresses { get; set; }
+        public DbSet<Telephone>? Telephones { get; set; }
     }
 }
 
